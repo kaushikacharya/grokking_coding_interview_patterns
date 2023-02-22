@@ -13,6 +13,7 @@ Grokking Coding Interview Patterns in C++
 
 | Chapter | Problem | Solution | Unit Tests |
 |---|---------|----------|------------|
+|Two Pointers|[Valid Palindrome](https://www.educative.io/courses/grokking-coding-interview-patterns-cpp/R1NKJD3XxBq)|[C++](./src/valid_palindrome.cpp)|Y
 |Two Pointers|[Sum of Three Values](https://www.educative.io/courses/grokking-coding-interview-patterns-cpp/xl6yz4283Jz)|[C++](./src/sum_of_three_values.cpp)|Y
 
 

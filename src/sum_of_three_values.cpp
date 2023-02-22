@@ -1,5 +1,15 @@
 /*  Problem: Sum of Three Values
     Date: Feb 16, 2023
+
+    Time complexity: O(n^2)
+        - Explanation: Step 1 (sorting) uses O(n*logn)
+        -               Step 2 (looping through the array): O(n^2)
+    
+    Space complexity: O(1)
+        - No extra space utilized when sorting is done in-place (e.g. quicksort).
+        - In case of mergesort, it would have been O(n).
+
+        Reference: https://www.geeksforgeeks.org/quick-sort/
 */
 
 #include <bits/stdc++.h>
@@ -9,9 +19,11 @@ using namespace std;
 
 bool FindSumOfThree(vector<int> nums, int target)
 {
-    // Step: Sort the elements in ascending order
+    // Step 1: Sort the elements in ascending order
     sort(nums.begin(), nums.end());
 
+    // Step 2: Loop through the array. Use two pointers: low and high to check if the current element of the array 
+    //          and the elements of low and high pointers sum up to the target.
     for (unsigned int i=0; i != nums.size()-2; ++i)
     {
         unsigned int low = i+1;
