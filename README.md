@@ -23,6 +23,8 @@ Grokking Coding Interview Patterns in C++
 |---------|---------|----------|------------|-----------------|-----------|
 |Two Pointers|[Valid Palindrome](https://www.educative.io/courses/grokking-coding-interview-patterns-cpp/R1NKJD3XxBq)|[C++](./src/valid_palindrome.cpp)|Y|O(n)|O(1)|
 |Two Pointers|[Sum of Three Values](https://www.educative.io/courses/grokking-coding-interview-patterns-cpp/xl6yz4283Jz)|[C++](./src/sum_of_three_values.cpp)|Y|O($n^2$)|O(1)|
+|Two Pointers|[Reverse Words in a String](https://www.educative.io/courses/grokking-coding-interview-patterns-cpp/qAVoZ7ByYxy)|[C++](./src/reverse_words_in_a_string.cpp)|Y|O(n)|O(1)|
+|Two Pointers|[Valid Palindrome II](https://www.educative.io/courses/grokking-coding-interview-patterns-cpp/R1kZPG4B00K)|[C++](./src/valid_palindrome_ii.cpp)|Y|O(n)|O(1)|
 
 
 #### <u>Related Repositories</u>
