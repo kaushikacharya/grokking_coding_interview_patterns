@@ -15,6 +15,6 @@
     - ### Reverse Words in a String
     - ### Valid Palindrome II
 
-- ## Fast and Slow Pointers
+- ## [Fast and Slow Pointers](./Chapter_3.md)
     - ### Fast and Slow Pointers: Introduction
     - ### Happy Number

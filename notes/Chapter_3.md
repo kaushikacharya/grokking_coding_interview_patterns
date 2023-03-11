@@ -1,5 +1,8 @@
 # Fast and Slow Pointers
 
+1. Fast and Slow pointers: Introduction
+2. [Happy Number](#happy-number)
+
 - ## Happy Number
     - ### Statement:
     ```
