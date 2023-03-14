@@ -17,4 +17,5 @@
 
 - ## [Fast and Slow Pointers](./Chapter_3.md)
     - ### Fast and Slow Pointers: Introduction
-    - ### Happy Number
+    - ### [Happy Number](./Chapter_3.md#happy-number)
+    - ### [Linked List Cycle](./Chapter_3.md#linked-list-cycle)

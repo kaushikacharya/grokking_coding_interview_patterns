@@ -8,6 +8,7 @@ Grokking Coding Interview Patterns in C++
 ### <u>Unit Test Framework</u>
 
 - [lest](https://github.com/martinmoene/lest)
+    - Unit tests are written using lest test framework which is written in a [single-file header only](./include/lest.hpp).
 
 #### <u>Space Complexity Definiiton</u>
 - There's a difference of opinion on whether memory used by input should also be considered as part of space complexity.
@@ -19,7 +20,7 @@ Grokking Coding Interview Patterns in C++
 
 ### <u>Problem Solutions</u>
 
-- Chapter: [Two Pointers](./notes/README.md)
+#### Chapter: [Two Pointers](./notes/README.md/#two-pointers)
 
 | Problem | Solution | Unit Tests | Time Complexity | Space Complexity* |
 |---------|----------|------------|-----------------|-----------|
@@ -28,11 +29,12 @@ Grokking Coding Interview Patterns in C++
 |[Reverse Words in a String](https://www.educative.io/courses/grokking-coding-interview-patterns-cpp/qAVoZ7ByYxy)|[C++](./src/reverse_words_in_a_string.cpp)|Y|O(n)|O(1)|
 |[Valid Palindrome II](https://www.educative.io/courses/grokking-coding-interview-patterns-cpp/R1kZPG4B00K)|[C++](./src/valid_palindrome_ii.cpp)|Y|O(n)|O(1)|
 
-- Chapter: [Fast and Slow Pointers](./notes/README.md)
+#### Chapter: [Fast and Slow Pointers](./notes/README.md#fast-and-slow-pointers)
 
 | Problem | Solution | Unit Tests | Time Complexity | Space Complexity* |
 |---------|----------|------------|-----------------|-----------|
 |[Happy Number](https://www.educative.io/courses/grokking-coding-interview-patterns-cpp/qVW5Xjgrn4r)|[C++](./src/happy_number.cpp)|Y||O(1)|
+|[Linked List Cycle](https://www.educative.io/courses/grokking-coding-interview-patterns-cpp/m7GZAz1lnDr)|[C++](./src/linked_list_cycle.cpp)|Y|O(n)|O(1)|
 
 #### <u>Related Repositories</u>
 - [leetcode](https://github.com/kaushikacharya/leetcode)
