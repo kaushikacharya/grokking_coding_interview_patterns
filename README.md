@@ -20,7 +20,7 @@ Grokking Coding Interview Patterns in C++
 
 ### <u>Problem Solutions</u>
 
-#### Chapter: [Two Pointers](./notes/README.md/#two-pointers)
+#### Chapter: [Two Pointers](./notes/README.md#two-pointers)
 
 | Problem | Solution | Unit Tests | Time Complexity | Space Complexity* |
 |---------|----------|------------|-----------------|-----------|
@@ -33,8 +33,10 @@ Grokking Coding Interview Patterns in C++
 
 | Problem | Solution | Unit Tests | Time Complexity | Space Complexity* |
 |---------|----------|------------|-----------------|-----------|
-|[Happy Number](https://www.educative.io/courses/grokking-coding-interview-patterns-cpp/qVW5Xjgrn4r)|[C++](./src/happy_number.cpp)|Y||O(1)|
-|[Linked List Cycle](https://www.educative.io/courses/grokking-coding-interview-patterns-cpp/m7GZAz1lnDr)|[C++](./src/linked_list_cycle.cpp)|Y|O(n)|O(1)|
+|[Happy Number](./notes/Chapter_3.md#happy-number)|[C++](./src/happy_number.cpp)|Y||O(1)|
+|[Linked List Cycle](./notes/Chapter_3.md#linked-list-cycle)|[C++](./src/linked_list_cycle.cpp)|Y|O(n)|O(1)|
+|[Middle of the Linked List](./notes/Chapter_3.md#middle-of-the-linked-list)|[C++](./src/middle_of_linked_list.cpp)|Y|O(n)|O(1)|
 
 #### <u>Related Repositories</u>
 - [leetcode](https://github.com/kaushikacharya/leetcode)
+    - Repository contains my solutions for the LeetCode algorithm problems.

@@ -3,6 +3,7 @@
 1. Fast and Slow pointers: Introduction
 2. [Happy Number](#happy-number)
 3. [Linked List Cycle](#linked-list-cycle)
+4. [Middle of the Linked List](#middle-of-the-linked-list)
 
 - ## Happy Number
     - ### Statement:
@@ -15,7 +16,7 @@
             Return TRUE if n is a happy number, and FALSE if not.
         ```
     - ### Constraints:
-        1 <= n <= $2^{31}$-1
+        $1 <= n <= 2^{31}-1$
     - ### Solutions:
         - Naive approach
             - Brute force approach: Repeatedly calculate the squared sum of digits of the input number and store the computed sum in a **hash set**.
@@ -53,3 +54,20 @@
                 - Initialize both pointers as head
                 - Move both pointers at different rates
                 - Check the equality of pointers
+
+- ## Middle of the Linked List
+    - ### Statement:
+        ```
+        Given  a singly linked list, return the middle node of the linked list. If the number of nodes in the linked list is even, return the second middle node.
+        ```
+
+    - ### Constraints:
+        - 1 $<=$ Number of nodes in the list $<=$ 100
+
+    - ### Solution:
+        - Naive approach:
+            - Count the number of nodes in the linked list first, and then find the middle node in the next iteration.
+        - Optimized approach using fast and slow pointers:
+            - Initialize two pointers names slow and fast at the head of the linked list.
+            - While traversing, move the slow pointer one step forward and the fast pointer two steps forward.
+            - When the fast pointer reaches the last node or NULL, then the slow pointer will point to the middle node of the linked list.
