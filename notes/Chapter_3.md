@@ -4,6 +4,9 @@
 2. [Happy Number](#happy-number)
 3. [Linked List Cycle](#linked-list-cycle)
 4. [Middle of the Linked List](#middle-of-the-linked-list)
+5. Circular Array Loop
+6. Find the Duplicate Number
+7. [Palindrome Linked List](#palindrome-linked-list)
 
 - ## Happy Number
     - ### Statement:
@@ -34,7 +37,7 @@
         ```
         Check if a linked list contains a cycle or not. If a cycle exists, return TRUE. Otherwise, return FALSE.
         ```
-    - ### Solution:
+    - ### [Solution](../src/linked_list_cycle.cpp):
         - Naive approach:
             - Traverse the linked list and store the current node in a set.
                 At each iteration, we check if the current node is already present in the set.
@@ -64,10 +67,34 @@
     - ### Constraints:
         - 1 $<=$ Number of nodes in the list $<=$ 100
 
-    - ### Solution:
+    - ### [Solution](../src/middle_of_linked_list.cpp):
         - Naive approach:
             - Count the number of nodes in the linked list first, and then find the middle node in the next iteration.
         - Optimized approach using fast and slow pointers:
             - Initialize two pointers names slow and fast at the head of the linked list.
             - While traversing, move the slow pointer one step forward and the fast pointer two steps forward.
             - When the fast pointer reaches the last node or NULL, then the slow pointer will point to the middle node of the linked list.
+
+- ## Palindrome Linked List
+    - ### Statement:
+        ```
+        Given the head of a linked list, your task is to check whether the linked list is a palindrome or not. Return TRUE if the linked list is a palindrome; otherwise, return FALSE.
+        ```
+    
+    - ### Constraints:
+        - Let $n$ be the number of nodes in a linked list.
+            - $1 <= n <= 500$
+    
+    - ### [Solution](../src/palindrome_linked_list.cpp):
+        - Using fast and slow pointers
+            - First, find the middle node of the linked list.
+                - Slow pointer: One step forward.
+                - Fast pointer: Two step forward.
+                - When fast pointer reaches either
+                    - End of the list or
+                    - Null node, 
+                - slow pointer points to the middle node of the list.
+            - Next, reverse the 2nd half of the linked list, starting from the node after the middle node.
+                - Additional info (KA):
+                    - IMHO, the official solution reverses the 2nd half from the middle node onwards, unlike the above statement.
+            - Finally, compare every element of the first half of the linked list with the corresponding element in the second half of the reversed linked list.

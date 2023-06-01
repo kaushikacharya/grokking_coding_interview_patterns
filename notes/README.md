@@ -20,3 +20,4 @@
     - ### [Happy Number](./Chapter_3.md#happy-number)
     - ### [Linked List Cycle](./Chapter_3.md#linked-list-cycle)
     - ### [Middle of the Linked List](./Chapter_3.md#middle-of-the-linked-list)
+    - ### [Palindrome Linked List](./Chapter_3.md#palindrome-linked-list)
