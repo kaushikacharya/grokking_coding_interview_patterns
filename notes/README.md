@@ -3,6 +3,7 @@
 1. [Getting Started](#getting-started)
 2. [Two Pointers](#two-pointers)
 3. [Fast and Slow Pointers](#fast-and-slow-pointers)
+4. [Sliding Window](#sliding-window)
 
 - ## Getting Started
     - ### Course Overview
@@ -21,3 +22,6 @@
     - ### [Linked List Cycle](./Chapter_3.md#linked-list-cycle)
     - ### [Middle of the Linked List](./Chapter_3.md#middle-of-the-linked-list)
     - ### [Palindrome Linked List](./Chapter_3.md#palindrome-linked-list)
+
+- ## [Sliding Window](./Chapter_4.md)
+    - ### [Sliding Window: Introduction](./Chapter_4.md#sliding-window-introduction)
