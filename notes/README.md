@@ -25,3 +25,4 @@
 
 - ## [Sliding Window](./Chapter_4.md)
     - ### [Sliding Window: Introduction](./Chapter_4.md#sliding-window-introduction)
+    - ### [Repeated DNA Sequences](./Chapter_4.md#repeated-dna-sequences)

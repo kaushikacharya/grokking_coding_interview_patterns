@@ -5,9 +5,13 @@
     Approach: Window sliding and usage of polynomial rolling hash function.
 
     Complexity:
-        Time: O(nk) (Average case)
-                - (k due to substr)
-        Space: O(n)
+        Time: 
+            - O(nk) (Average case)
+            - O(n log n) (Worst case) (All the substrings have hash collision).
+        Space: O(nk)
+        Explanation: For each sliding window, substr function extracts substring of length k.
+                     N.B. substr copies into a new string object.
+                     This contributes O(k) for both time and space complexity in each iteration.
 */
 
 #include <bits/stdc++.h>
@@ -17,6 +21,13 @@ using namespace std;
 
 set<string> FindRepeatedSequences(string s, int k)
 {
+    set<string> output{};
+
+    if (s.size() < k)
+    {
+        return output;
+    }
+
     // Define the parameters of the polynomial rolling hash function.
     long long p = 31;
     long long m = 1e9 + 7;
@@ -84,8 +95,6 @@ set<string> FindRepeatedSequences(string s, int k)
     }
     
     // Populate the output set with the substring which have occurrence > 1.
-    set<string> output{};
-
     for (unordered_map<string, unsigned int>::iterator it_substr_count=substr_count_map.begin(); it_substr_count != substr_count_map.end(); ++it_substr_count)
     {
         if ((*it_substr_count).second > 1)
@@ -114,6 +123,12 @@ lest::test tests[] = {
         string s = "AGCTGAAAGCTTAGCTG";
         int k = 5;
         set<string> output = {"AGCTG"};
+        EXPECT(FindRepeatedSequences(s,k) == output);
+    },
+    CASE("Test Case #4"){
+        string s = "AGCT";
+        int k = 5;
+        set<string> output = {};
         EXPECT(FindRepeatedSequences(s,k) == output);
     }
 };

@@ -49,12 +49,35 @@
 - ### Try it yourself
     - Additional info (KA):
         - [String hashing using Polynomial rolling hash function](https://www.geeksforgeeks.org/string-hashing-using-polynomial-rolling-hash-function/)
-        - ```substr```function time complexity: $O(n)$
-            - Source: [HackerEarth](https://www.hackerearth.com/practice/notes/standard-template-library/)
+        - ```substr``` function time complexity: $O(n)$
+            - Sources: 
+                - [HackerEarth](https://www.hackerearth.com/practice/notes/standard-template-library/)
+                - [CodingNinjas](https://www.codingninjas.com/codestudio/library/substring-in-cpp)
+                - [Algorithms for Competitive Programming](https://cp-algorithms.com/string/string-hashing.html)
+                    - Detailed article which describes various algorithms which uses string hashing.
             - Returns a copy of the substring.
     - Solution:
         - [Kaushik](../src/repeated_dna_sequences.cpp)
             - Code review:
                 - Use indices to extract substrings instead of ```substr``` function.
                     - This would reduce time complexity from $O(k)$ to $O(1)$.
-                - Error handling: Don't assume that input string $s$ has at least $k$ characters.
+                        - ?? How to do that?
+                - Error handling: Don't assume that input string $s$ has at least $k$ characters. [Update: Handled]
+                - **Time complexity**:
+                    - Comuting hash value for a substring of length $k$ using polynomial rolling hash function takes $O(k)$.
+                    - Code review mentions that it takes $O(N k)$ for computing hash values for all the substrings.
+                        - IMHO, we take $O(k)$ time only for a single substring. But for rest of the substrings, we use sliding window to compute in $O(1)$ for each of the substrings.
+                - **Space complexity**:
+                    - $O(N k)$ where N = input string length, k = substring length
+                    - 3 components:
+                        - *We are storing the hash value of each substring in an unordered_map*: $O(N k)$
+                        - Another unordered_map stores count of each substring. Complexity: $O(N k)$
+                        - Set of repeated substrings returned by the function. In worst case, all substrings are repeated. Complexity: $O(N k)$
+        - [Official solution](../src/repeated_dna_sequences_official_solution.cpp)
+            - My observation:
+                - Ignores the possibility of hash collision. This could lead to incorrect solution.
+                - IMHO time and space complexity mentioned is incorrect.
+            - The complexity computation ignores [substr](https://www.geeksforgeeks.org/substring-in-cpp/)
+                - Complexity of ```substr```:
+                    - Time: $O(N)$
+                    - Space: $O(N)$
