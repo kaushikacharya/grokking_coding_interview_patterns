@@ -77,7 +77,9 @@
             - My observation:
                 - Ignores the possibility of hash collision. This could lead to incorrect solution.
                 - IMHO time and space complexity mentioned is incorrect.
-            - The complexity computation ignores [substr](https://www.geeksforgeeks.org/substring-in-cpp/)
-                - Complexity of ```substr```:
-                    - Time: $O(N)$
-                    - Space: $O(N)$
+                    - Time complexity: $O(n)$
+                    - Space complexity: $O(n + n - k)$ which simplifies to $O(n-k)$
+                - The complexity computation ignores [substr](https://www.geeksforgeeks.org/substring-in-cpp/)
+                    - Complexity of ```substr```:
+                        - Time: $O(N)$
+                        - Space: $O(N)$
